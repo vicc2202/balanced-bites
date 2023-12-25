@@ -4,3 +4,23 @@
     box-sizing: border-box
 }
 
+/* Inicio estilos navegador */
+.navegador {
+    background-color: rgb(197,221,49);
+    max-width: 100%;
+    margin: 0px;
+    padding: 0px;
+    
+}
+
+.caja-navegador {
+    padding: 20px;
+}
+
+.texto-navegador {
+    color: rgb(223,233,232);
+}
+/* Fin estilos navegador */
+
+
+
