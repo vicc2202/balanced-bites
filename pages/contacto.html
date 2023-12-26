@@ -52,32 +52,28 @@
     <!-- Fin Header -->
     <!-- Inicio Main -->
     <main class="main">
-        <section>
-            <h1 class="titulo-principal">Contacto</h1>
-            <article>
-              <div class="content-container">
-                <section class="text-section">
-                    <h2>Contactanos</h2>
-                    <p>No dudes en contactarnos en caso que tengas dudas o necesites mayor asesoramiento</p>
-                    <img src="../images/girlsitting.jpg" alt="mujerrespondiendoconsultas">
-                </section>
-                <section class="form-section">
-                    <h2>Contacto</h2>
-                    <form action="procesar_formulario.php" method="POST" enctype="text/plain">
-                        <label for="nombre">Nombre:</label>
-                        <input type="text" id="nombre" name="nombre" required>
-                        <label for="email">Email:</label>
-                        <input type="email" id="email" name="email" required>
-                        <label for="asunto">Asunto:</label>
-                        <textarea id="asunto" name="asunto" required></textarea>
-                        <label for="mensaje">Mensaje:</label>
-                        <textarea id="mensaje" name="mensaje" rows="4" required></textarea>
-                        <button type="submit">Enviar</button>
-                    </form>
-                </section>
-            </div>
-            </article>
+      <h1>Contacto</h1>
+      <div class="content-container">
+        <section class="text-section">
+            <h2>Contactanos</h2>
+            <p>No dudes en contactarnos en caso que tengas dudas o necesites mayor asesoramiento</p>
+            <img src="../images/girlsitting.jpg" alt="mujerrespondiendoconsultas">
         </section>
+        <section class="form-section">
+            <h2>Contacto</h2>
+            <form action="procesar_formulario.php" method="POST" enctype="text/plain">
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" required>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                <label for="asunto">Asunto:</label>
+                <textarea id="asunto" name="asunto" required></textarea>
+                <label for="mensaje">Mensaje:</label>
+                <textarea id="mensaje" name="mensaje" rows="4" required></textarea>
+                <button type="submit">Enviar</button>
+            </form>
+        </section>
+    </div>
     </main>
     <!-- Fin Main -->
     <!-- Inicio Footer -->
