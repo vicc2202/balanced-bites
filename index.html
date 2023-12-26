@@ -7,26 +7,26 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <link rel="stylesheet" href="./css/main.css">
     <link rel="shortcut icon" href="./images/favicon.png" type="image/x-icon">
-
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css">
 </head>
 
-<body>
+<body class="body">
     <!-- Inicio Header -->
     <header class="navegador sticky-top caja-navegador">
         <nav class="navbar navbar-expand-lg bg-body-tertiary navegador">
             <div class="container-fluid navegador">
-                <a class="navbar-brand" href="./index.html">Balanced Bites</a>
+                <a class="navbar-brand balanced-bites" href="./index.html">Balanced Bites</a>
                 <img src="./images/favicon.png" alt="Bootstrap" width="40" >
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation"></button>
                 <div class="collapse navbar-collapse" id="navbarNavDropdown">
                     <ul class="navbar-nav">                
                         <li class="nav-item">
-                        <a class="nav-link texto-navegador" href="./pages/nuestros-objetivos.html">Nuestros Objetivos</a>
+                        <a class="nav-link texto-navegador link-navegador" href="./pages/nuestros-objetivos.html">Nuestros Objetivos</a>
                         </li>
                         <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle texto-navegador" href="./pages/planes-de-alimentacion.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">Alimentación</a>
+                        <a class="nav-link dropdown-toggle texto-navegador link-navegador" href="./pages/alimentacion.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">Alimentación</a>
                     <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href="./pages/planes-de-alimentacion.html">Planes de Alimentación</a></li>
+                        <li><a class="dropdown-item" href="./pages/alimentacion.html">Planes de Alimentación</a></li>
                         <div class="dropdown-divider"></div>
                         <li><a class="dropdown-item" href="#">Dieta Cetógenica</a></li>
                         <li><a class="dropdown-item" href="#">Dieta Paleo</a></li>
@@ -36,12 +36,12 @@
                     </ul>
                     </li>
                         <li class="nav-item">
-                        <a class="nav-link texto-navegador" href="./pages/recetas.html">Recetas</a></li>
+                        <a class="nav-link texto-navegador link-navegador" href="./pages/recetas.html">Recetas</a></li>
                         <li class="nav-item">
-                        <a class="nav-link texto-navegador" href="./pages/planes-de-ejercicios.html">Planes de Ejercicios</a>
+                        <a class="nav-link texto-navegador link-navegador" href="./pages/planes-de-ejercicios.html">Planes de Ejercicios</a>
                         </li>
                         <li class="nav-item">
-                        <a class="nav-link texto-navegador" href="./pages/contacto.html">Contacto</a>
+                        <a class="nav-link texto-navegador link-navegador" href="./pages/contacto.html">Contacto</a>
                         </li>
                     </ul>
                 </div>
@@ -50,27 +50,27 @@
     </header>
     <!-- Fin Header -->
     <!-- Inicio Main -->
-    <main>
+    <main class="main">
         <!-- Inicio Sección 1 -->
         <section>
-            <h1>
+            <h1 class="titulo-principal">
                 ¿Por qué nosotros?
             </h1>
             <article>
-                <p> 
+                <p class="texto"> 
                     En un mundo donde la información sobre nutrición parece cambiar
                     constantemente, es fácil sentirse abrumado por las tendencias de dietas
                     relámpago y consejos contradictorios. Pero nosotros creemos en un
                     enfoque diferente: la nutrición como un camino hacia la salud sostenible
                     y el equilibrio hormonal.
                 </p>
-                <p>
+                <p class="texto">
                     Imagina una vida en la que te sientas más enérgico, más saludable y en
                     total control de tu bienestar. Esto es posible a través de una nutrición
                     consciente y la incorporación del ejercicio como parte fundamental de tu
                     rutina diaria.
                 </p>
-                <p>
+                <p class="texto">
                     En Balanced Bites, estamos comprometidos a guiarte en este viaje hacia
                     una vida más saludable y equilibrada. No se trata de dietas restrictivas
                     o modas pasajeras. Aquí, encontrarás un enfoque holístico que se centra
@@ -86,10 +86,13 @@
         <!-- Fin Sección 1 -->
         <!-- Inicio Sección 2 -->
         <section>
-            <article>
-                <h2>Nuestros Objetivos</h2>
-                <h3>Hormonas</h3>
-                <p> 
+            <article >
+                <div class="tarjeta1">
+                    <div class="tarjeta1-item">
+                <h2 class="titulo-secundario">Nuestros Objetivos</h2>
+                <h3 class="titulo-terciario">Hormonas</h3>
+                <img class="imagenes-objetivos1" src="./images/hormonas.png" alt="hormonas">
+                <p class="texto"> 
                     La alimentación es mucho más que simplemente satisfacer el hambre; es un
                     elemento clave que influye en la producción, regulación y equilibrio de
                     nuestras hormonas. Las hormonas actúan como mensajeros químicos en el
@@ -105,9 +108,13 @@
                     problemas de salud, mientras que otros pueden contribuir a desencadenar
                     afecciones como la resistencia a la insulina, la fatiga crónica o el
                     desequilibrio hormonal.
-                </p>
-                <h3>Rendimiento</h3>
-                <p>
+                </p></div>
+                </div>
+                <div class="tarjeta2">
+                    <div class="tarjeta2-item">
+                    <h3 class="titulo-terciario">Rendimiento</h3>
+                    <img class="imagenes-objetivos2" src="./images/rendimiento.png" alt="rendimiento">
+                    <p class="texto">
                     Imagina un mundo en el que cada día puedas despertar con la energía y la
                     claridad mental necesarias para enfrentar cualquier desafío. Ese mundo
                     es posible cuando comprendemos cómo nuestras hormonas desempeñan un
@@ -128,9 +135,11 @@
                     información basada en la evidencia y estrategias prácticas para que
                     puedas aprovechar al máximo tu potencial y llevar tu rendimiento al
                     siguiente nivel.
-                </p>
-                <h3>Nutrientes</h3>
-                <p>
+                     </p></div>
+                <div class="tarjeta2-item">
+                <h3 class="titulo-terciario">Nutrientes</h3>
+                <img class="imagenes-objetivos2" src="./images/nutrientes.png" alt="nutrientes">
+                <p class="texto">
                     Exploraremos cómo diferentes nutrientes y alimentos pueden estimular la
                     producción y regulación de hormonas cruciales para el bienestar, como la
                     insulina, la hormona del crecimiento, la leptina y muchas otras. Nuestro
@@ -140,15 +149,16 @@
                     Comprenderás cómo una alimentación consciente y equilibrada puede ser tu
                     aliada en la búsqueda de una salud óptima y una vida llena de vitalidad.
                 </p>
-                <p class="linksMasInfo">Para mas información ingresa<a href="./pages/nuestrosobjetivos.html">acá.</a></p>
+                <p class="texto mas-info">Para mas información ingresa<a class="link-mas-info" href="./pages/nuestros-objetivos.html"> acá.</a></p></div>
+                </div>
             </article>
         </section>
         <!-- Fin Sección 2 -->
         <!-- Inicio Sección 3 -->
         <section>
             <article>
-                <h2>Planes de Alimentación</h2>
-                <p>
+                <h2 class="titulo-secundario">Planes de Alimentación</h2>
+                <p class="texto">
                     Entendemos que cada persona es única, con necesidades y preferencias
                     dietéticas individuales. Ya sea que enfrentes desafíos específicos, como
                     la diabetes, la intolerancia al gluten o simplemente sigas un enfoque
@@ -156,73 +166,104 @@
                     herramienta poderosa para mejorar tus niveles hormonales y tu calidad de
                     vida.
                 </p>
-                <p>
+                <p class="texto">
                     Descubrirás cómo ajustar tu alimentación para mantener un equilibrio
                     hormonal óptimo, incluso si tienes restricciones alimenticias.
                     Aprenderás a elegir alimentos específicos, crear planes de comidas
                     personalizados y hacer ajustes que te permitan mejorar tu salud
                     hormonal, sin importar tu situación.
                 </p>
-                <ul>
-                    <li>Cetogénica</li>
-                    <li>Vegetariana</li>
-                    <li>Paleo</li>
-                    <li>Vegana</li>
-                    <li>Relacionadas a la Tiroides</li>
+                <ul class="texto lista-dietas-contenedor">
+                    <li class="lista-dietas">Cetogénica</li>
+                    <li class="lista-dietas">Vegetariana</li>
+                    <li class="lista-dietas">Paleo</li>
+                    <li class="lista-dietas">Vegana</li>
+                    <li class="lista-dietas">Relacionadas a la Tiroides</li>
                 </ul>
-                <p>Si no encontraste tu plan, clikeá<a href="./pages/planesdealimentacion.html">acá.</a></p>
+                <p class="texto mas-info">Si no encontraste tu plan, clikeá<a class="link-mas-info" href="./pages/alimentacion.html"> acá.</a></p>
             </article>
         </section>
         <!-- Fin Sección 3 -->
         <!-- Inicio Sección 4 -->
         <section>
-            <article>
-                <h2>Recetas</h2>
-                <p>
-                    En BalancedBites te invitamos a un viaje culinario que desafía las
+            <div class="grid-container">
+            <article class="grid-area-texto">
+                <h2 class="titulo-secundario">Recetas</h2>
+                <p class="texto">
+                    En Balanced Bites te invitamos a un viaje culinario que desafía las
                     expectativas tradicionales de la alimentación saludable. Aquí, nos
                     enorgullece ofrecerte recetas deliciosas y variadas que se adaptan a todo
                     tipo de alimentación y, al mismo tiempo, están diseñadas para mejorar tus
                     niveles hormonales y tu bienestar general.
                 </p>
-                <h3>Comer bien nunca fue tan sabroso</h3>
-                <p>
+                <h3 class="titulo-terciario">Comer bien nunca fue tan sabroso</h3>
+                <p class="texto">
                     Sabemos que la idea de una dieta saludable a menudo se asocia con
                     restricciones y privaciones, pero nosotros creemos que la nutrición
                     puede ser un placer. Nuestras recetas han sido cuidadosamente diseñadas
                     para deleitar tus papilas gustativas mientras trabajan en armonía con
                     tus hormonas.
                 </p>
-                <h3>Alimentación para todos, sin excepciones</h3>
-                <p>
+                <h3 class="titulo-terciario">Alimentación para todos, sin excepciones</h3>
+                <p class="texto">
                     Ya seas diabético, celíaco, vegetariano o simplemente un amante de la
                     buena comida, tenemos algo especial para ti. Navega por nuestras recetas
                     y encontrarás opciones que se ajustan a tus necesidades y preferencias
                     dietéticas, sin comprometer el sabor ni los beneficios para la salud.
                 </p>
-                <p>Para mas recetas entrá <a href="./pages/recetas.html">acá.</a></p>
+                <p class="texto mas-info">Para mas recetas entrá <a class="link-mas-info" href="./pages/recetas.html">acá.</a></p>
             </article>
+            <aside class="grid-area-carousel">
+                <div id="carouselExampleAutoplaying" class="carousel slide imagenes-comida border border-5" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                      <div class="carousel-item active">
+                        <img src="./images/cremadepalta.jpg" class="d-block w-100" alt="cremadepalta">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="./images/crepes.jpg" class="d-block w-100" alt="crepes">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="./images/panketo.jpg" class="d-block w-100" alt="panketo">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="./images/salmon.jpg" class="d-block w-100" alt="salmon">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="./images/tofufideo.jpg" class="d-block w-100" alt="tofufideo">
+                      </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Next</span>
+                    </button>
+                  </div>
+            </aside>
+            </div>
         </section>
         <!-- Fin Sección 4 -->
         <!-- Inicio Sección 5 -->
         <section>
             <article>
-                <h2>Planes de Ejercicios</h2>
-                <p>
+                <h2 class="titulo-secundario">Planes de Ejercicios</h2>
+                <p class="texto">
                     Aquí, creemos firmemente que el ejercicio no debe ser un "talla única" y
                     que la actividad física puede y debe adaptarse a cada etapa de tu vida y
                     a tus necesidades individuales.
                 </p>
-                <h3>Un enfoque inclusivo para el ejericio</h3>
-                <p>
+                <h3 class="titulo-terciario">Un enfoque inclusivo para el ejercicio</h3>
+                <p class="texto">
                     Entendemos que cada persona es única y atraviesa diferentes momentos en
                     la vida. Ya sea que seas un apasionado atleta, un ocupado profesional,
                     un padre o madre con una agenda ajustada, o simplemente alguien que está
                     buscando mejorar su salud, tenemos un plan de ejercicio diseñado para
                     ti.
                 </p>
-                <h3>Ejercicio pra todas las etapas de la vida</h3>
-                <p>
+                <h3 class="titulo-terciario">Ejercicio pra todas las etapas de la vida</h3>
+                <p class="texto">
                     Aquí, encontrarás planes de ejercicio que se adaptan a tus
                     circunstancias personales y que te ayudarán a mantenerte activo y
                     saludable sin importar tu nivel de condición física o tu edad. Desde
@@ -230,32 +271,33 @@
                     estamos comprometidos a proporcionarte opciones que se ajusten a tu
                     momento de la vida.
                 </p>
-                <h3>Descubre la alegría de moverte</h3>
-                <p>
+                <h3 class="titulo-terciario">Descubre la alegría de moverte</h3>
+                <p class="texto">
                     Nuestro enfoque es ayudarte a encontrar la alegría en el movimiento y en
                     la actividad física. El ejercicio no debe ser una carga, sino una
                     oportunidad para sentirte bien, mejorar tu salud y mantener un
                     equilibrio en tu vida. Creemos en planes de ejercicio que te motivarán,
                     te desafiarán y te ayudarán a alcanzar tus objetivos de bienestar.
                 </p>
-                <p> Para mas informacion clickeá<a href="./pages/planesdeejercicios.html">acá.</a></p>
+                <p class="texto mas-info"> Para mas informacion clickeá<a class="link-mas-info" href="./pages/planes-de-ejercicios.html"> acá.</a></p>
             </article>
         </section>
         <!-- Fin Sección 5 -->
     </main>
     <!-- Fin Main -->
     <!-- Inicio Footer -->
-    <footer>  
-            <form action="" method="" enctype="">
-                <label for="">Suscribte a nuestro newsletter</label>
-                <input type="" name="" placeholder="">
-                <input type="" value="" >
-                    </form>
-                <p>Contacto: info@balancedbites.com</p>
-                <p>Seguinos en</p>
-                <img src="" alt="">
-                <img src="" alt="">
-                <h4>© 2023 Balanced Bites. Todos los derechos reservados.</h4>
+    <footer class="footer-section texto">   
+        <form action="procesar_formulario.php" method="post" enctype="text/plain">
+            <label for="suscribite a nuestro newsletter">Suscribte a nuestro newsletter</label>
+            <input type="email" name="suscrbite a nuestro newsletter" placeholder="Ingrese su email">
+            <input type="submit" value="Enviar" >
+                </form>
+            <p>Contacto: info@balancedbites.com</p>
+            <p>Seguinos en</p>
+            <i class="bi bi-facebook facebook"></i>
+            <i class="bi bi-instagram instagram"></i>
+            
+            <p><strong>© 2023 Balanced Bites. Todos los derechos reservados.</strong> </p>
     </footer>
     <!-- Fin Footer -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>

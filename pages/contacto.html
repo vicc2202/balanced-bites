@@ -7,13 +7,14 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <link rel="stylesheet" href="../css/main.css">
     <link rel="shortcut icon" href="../images/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css">
 </head>
-<body>
+<body class="body">
   <!-- Inicio Header -->
     <header class="navegador sticky-top caja-navegador">
         <nav class="navbar navbar-expand-lg bg-body-tertiary navegador">
             <div class="container-fluid navegador">
-                <a class="navbar-brand" href="../index.html">Balanced Bites</a>
+                <a class="navbar-brand balanced-bites" href="../index.html">Balanced Bites</a>
                 <img src="../images/favicon.png" alt="Bootstrap" width="40">
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span></button>
@@ -23,10 +24,10 @@
                     <a class="nav-link texto-navegador" href="./nuestros-objetivos.html">Nuestros Objetivos</a>
                   </li>
                   <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle texto-navegador" href="./planes-de-alimentacion.html" role="button" data-bs-toggle="dropdown" aria-expanded="false" aria-current="page">Alimentación
+                    <a class="nav-link dropdown-toggle texto-navegador" href="./alimentacion.html" role="button" data-bs-toggle="dropdown" aria-expanded="false" aria-current="page">Alimentación
                     </a>
                     <ul class="dropdown-menu">
-                      <li><a class="dropdown-item" href="./planes-de-alimentacion.html">Planes de Alimentación</a></li>
+                      <li><a class="dropdown-item" href="./alimentacion.html">Planes de Alimentación</a></li>
                       <div class="dropdown-divider"></div>
                       <li><a class="dropdown-item" href="#">Dieta Cetogénica</a></li>
                       <li><a class="dropdown-item" href="#">Dieta Paleo</a></li>
@@ -50,28 +51,48 @@
     </header>
     <!-- Fin Header -->
     <!-- Inicio Main -->
-    <main>
+    <main class="main">
         <section>
-            <h1>Contacto</h1>
+            <h1 class="titulo-principal">Contacto</h1>
             <article>
-
+              <div class="content-container">
+                <section class="text-section">
+                    <h2>Contactanos</h2>
+                    <p>No dudes en contactarnos en caso que tengas dudas o necesites mayor asesoramiento</p>
+                    <img src="../images/girlsitting.jpg" alt="mujerrespondiendoconsultas">
+                </section>
+                <section class="form-section">
+                    <h2>Contacto</h2>
+                    <form action="procesar_formulario.php" method="POST" enctype="text/plain">
+                        <label for="nombre">Nombre:</label>
+                        <input type="text" id="nombre" name="nombre" required>
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" required>
+                        <label for="asunto">Asunto:</label>
+                        <textarea id="asunto" name="asunto" required></textarea>
+                        <label for="mensaje">Mensaje:</label>
+                        <textarea id="mensaje" name="mensaje" rows="4" required></textarea>
+                        <button type="submit">Enviar</button>
+                    </form>
+                </section>
+            </div>
             </article>
         </section>
     </main>
     <!-- Fin Main -->
     <!-- Inicio Footer -->
-    <footer>  
-        <form action="" method="" enctype="">
-            <label for="">Suscribte a nuestro newsletter</label>
-            <input type="" name="" placeholder="">
-            <input type="" value="" >
-                </form>
-            <p>Contacto: info@balancedbites.com</p>
-            <p>Seguinos en</p>
-            <img src="" alt="">
-            <img src="" alt="">
-            <h4>© 2023 Balanced Bites. Todos los derechos reservados.</h4>
-</footer>
+    <footer class="footer-section texto">   
+      <form action="procesar_formulario.php" method="post" enctype="text/plain">
+          <label for="suscribite a nuestro newsletter">Suscribte a nuestro newsletter</label>
+          <input type="email" name="suscrbite a nuestro newsletter" placeholder="Ingrese su email">
+          <input type="submit" value="Enviar" >
+              </form>
+          <p>Contacto: info@balancedbites.com</p>
+          <p>Seguinos en</p>
+          <i class="bi bi-facebook facebook"></i>
+          <i class="bi bi-instagram instagram"></i>
+          <p><strong>© 2023 Balanced Bites. Todos los derechos reservados.</strong> </p>
+  </footer>
 <!-- Fin Footer -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
 </body>

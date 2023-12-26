@@ -6,13 +6,15 @@
     <title>Planes de Ejercicios</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <link rel="stylesheet" href="../css/main.css">
+    <link rel="shortcut icon" href="../images/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css">
 </head>
-<body>
+<body class="body">
   <!-- Inicio Header -->
     <header class="navegador sticky-top caja-navegador">
       <nav class="navbar navbar-expand-lg bg-body-tertiary navegador">
         <div class="container-fluid navegador">
-            <a class="navbar-brand" href="../index.html">Balanced Bites</a>
+            <a class="navbar-brand balanced-bites" href="../index.html">Balanced Bites</a>
             <img src="../images/favicon.png" alt="Bootstrap" width="40">
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span></button>
@@ -22,10 +24,10 @@
                 <a class="nav-link texto-navegador" href="./nuestros-objetivos.html">Nuestros Objetivos</a>
               </li>
               <li class="nav-item dropdown" >
-                <a class="nav-link dropdown-toggle texto-navegador" href="./planes-de-alimentacion.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">Alimentación
+                <a class="nav-link dropdown-toggle texto-navegador" href="./alimentacion.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">Alimentación
                 </a>
                 <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="./planes-de-alimentacion.html">Planes de Alimentación</a></li>
+                  <li><a class="dropdown-item" href="./alimentacion.html">Planes de Alimentación</a></li>
                   <div class="dropdown-divider"></div>
                   <li><a class="dropdown-item" href="#">Dieta Cetogénica</a></li>
                   <li><a class="dropdown-item" href="#">Dieta Paleo</a></li>
@@ -49,10 +51,10 @@
     </header>
     <!-- Fin Header -->
     <!-- Inicio Main -->
-    <main>
+    <main class="main">
         <section>
-            <h1>Planes de Ejercicios</h1>
-            <p>
+            <h1 class="titulo-principal">Planes de Ejercicios</h1>
+            <p class="texto">
                 En BalancedBites, creemos firmemente que la actividad física es esencial para la salud y el bienestar
                 de todas las personas, sin importar su edad, condición física o situación de salud. Nuestra misión
                 es proporcionar un espacio inclusivo y accesible donde todos puedan encontrar un plan de ejercicios
@@ -63,8 +65,8 @@
               </p>
             </article>
             <article>
-              <h2>¿Quiénes pueden beneficiarse de BalancedBites?</h2>
-              <p>
+              <h2 class="titulo-secundario">¿Quiénes pueden beneficiarse de BalancedBites?</h2>
+              <p class="texto">
                 Personas jóvenes y atléticas que buscan desafíos específicos para llevar su rendimiento al siguiente nivel.
                 Personas sedentarias que desean dar sus primeros pasos hacia un estilo de vida más activo y saludable.
                 Ancianos que buscan mantener su movilidad y vitalidad a medida que envejecen.
@@ -76,16 +78,16 @@
               </p>
             </article>
             <article>
-              <h2>Explora nuestros planes de ejercicio</h2>
-              <p>
+              <h2 class="titulo-secundario">Explora nuestros planes de ejercicio</h2>
+              <p class="texto">
                 Descubre nuestro catálogo de planes de ejercicio personalizados y encuentra el que mejor
                 se adapte a tus necesidades. Ya sea que estés buscando aumentar tu fuerza, mejorar
                 tu flexibilidad, perder peso o simplemente mantenerte activo, BalancedBites tiene algo para ti.
               </p>
-              <p>Estamos emocionados de ser parte de tu viaje hacia un estilo de vida más saludable y activo.</p>
+              <p class="texto">Estamos emocionados de ser parte de tu viaje hacia un estilo de vida más saludable y activo.</p>
             </article>
             <article>
-              <h3>Nivel Inicial</h3>
+              <h3 class="titulo-terciario">Nivel Inicial</h3>
               <h4>Inicio</h4>
               <aside>
                 <iframe width="560" height="315" src="https://www.youtube.com/embed/2Z9g-AZinUc?si=0ujZPc_ZjHT_9-aF"
@@ -93,7 +95,7 @@
                   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                   allowfullscreen>video de ejercicio faciles</iframe>
               </aside>
-              <h3>Nivel Intermedio</h3>
+              <h3 class="titulo-terciario">Nivel Intermedio</h3>
               <h4>Intermedio</h4>
               <aside>
                 <iframe width="560" height="315" src="https://www.youtube.com/embed/hYg5bZVWins?si=zl10qkGbjD45SN0f"
@@ -101,7 +103,7 @@
                   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                   allowfullscreen>video de ejercicio intermedio</iframe>
               </aside>
-              <h3>Nivel Avanzado</h3>
+              <h3 class="titulo-terciario">Nivel Avanzado</h3>
               <h4>Avanzado</h4>
               <aside>
                 <iframe width="560" height="315" src="https://www.youtube.com/embed/yeLfaC9XIzQ?si=kV9h9hM2FfAiSsIw"
@@ -114,18 +116,19 @@
     </main>
     <!-- Fin Main -->
     <!-- Inicio Footer -->
-    <footer>  
-        <form action="" method="" enctype="">
-            <label for="">Suscribte a nuestro newsletter</label>
-            <input type="" name="" placeholder="">
-            <input type="" value="" >
-                </form>
-            <p>Contacto: info@balancedbites.com</p>
-            <p>Seguinos en</p>
-            <img src="" alt="">
-            <img src="" alt="">
-            <h4>© 2023 Balanced Bites. Todos los derechos reservados.</h4>
-</footer>
+    <footer class="footer-section texto">   
+      <form action="procesar_formulario.php" method="post" enctype="text/plain">
+          <label for="suscribite a nuestro newsletter">Suscribte a nuestro newsletter</label>
+          <input type="email" name="suscrbite a nuestro newsletter" placeholder="Ingrese su email">
+          <input type="submit" value="Enviar" >
+              </form>
+          <p>Contacto: info@balancedbites.com</p>
+          <p>Seguinos en</p>
+          <i class="bi bi-facebook facebook"></i>
+          <i class="bi bi-instagram instagram"></i>
+          
+          <p><strong>© 2023 Balanced Bites. Todos los derechos reservados.</strong> </p>
+  </footer>
 <!-- Fin Footer -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
 </body>
