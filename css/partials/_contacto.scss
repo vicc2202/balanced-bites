@@ -1,0 +1,95 @@
+
+.contactoFormu {
+    margin: 0;
+    padding: 0;
+    font-family: 'Nunito', sans-serif;
+    background-color: #f0f0f0;
+}
+
+.intro-section {
+    text-align: center;
+    background-color: #45864b;
+    color: #fff;
+    padding: 70px 0;
+    .intro-section img {
+        max-width: 100%;
+        height: auto;
+        margin-bottom: 20px;
+        margin-top: 0;
+        
+    }
+    .intro-section h1 {
+        font-size: 2rem;
+    }
+}
+
+.content-container {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 40px;
+}
+
+.text-section {
+    flex: 1;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    h2 {
+        font-size: 1.5rem;
+    }
+}
+
+.text-section p {
+    margin-bottom: 20px;
+}
+
+.text-section img {
+    max-width: 100%;
+    height: auto;
+}
+
+.form-section {
+    flex: 1;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    h2 {
+        font-size: 1.5rem;
+    }
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    background-color: #463f13;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #0056b3;
+}

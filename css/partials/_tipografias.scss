@@ -1,0 +1,33 @@
+@font-face {
+    font-family: Philosopher;
+    src: url(../../fonts/Philosopher-BoldItalic.ttf);
+}
+
+.balanced-bites {
+    font-family: Philosopher;
+    font-size: 2rem;
+    transition: 0.5s;
+}
+
+.balanced-bites:hover {
+    font-size: 2.5rem;
+}
+
+.titulo-principal {
+    font-weight: 600;
+    font-style: italic;
+}
+
+.titulo-secundario {
+    font-weight: 500;
+    font-style: normal;
+}
+
+.titulo-terciario {
+    font-weight: 400;
+}
+
+.texto {
+    font-weight: 200;
+    font-size: 1.5rem;
+}

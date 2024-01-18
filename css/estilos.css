@@ -1,0 +1,320 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;1,200;1,300;1,400&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.body {
+  background-color: rgb(237, 233, 225);
+  font-family: "Nunito", sans-serif;
+}
+.body .main {
+  padding: 1.5rem;
+}
+
+@font-face {
+  font-family: Philosopher;
+  src: url(../../fonts/Philosopher-BoldItalic.ttf);
+}
+.balanced-bites {
+  font-family: Philosopher;
+  font-size: 2rem;
+  transition: 0.5s;
+}
+
+.balanced-bites:hover {
+  font-size: 2.5rem;
+}
+
+.titulo-principal {
+  font-weight: 600;
+  font-style: italic;
+}
+
+.titulo-secundario {
+  font-weight: 500;
+  font-style: normal;
+}
+
+.titulo-terciario {
+  font-weight: 400;
+}
+
+.texto {
+  font-weight: 200;
+  font-size: 1.5rem;
+}
+
+.navegador {
+  background-color: rgb(197, 221, 49);
+  max-width: 100%;
+  margin: 0px;
+  padding: 0px;
+}
+
+.caja-navegador {
+  padding: 18px;
+}
+
+.texto-navegador {
+  font-weight: 300;
+  color: rgb(223, 233, 232);
+  font-size: 1.3rem;
+  transition: 0.5s;
+}
+
+a:link.link-navegador {
+  text-decoration: none;
+  padding: 20px;
+  color: black;
+}
+
+a:visited {
+  color: black;
+}
+
+a:hover {
+  font-size: 1.5rem;
+}
+
+a:active {
+  color: darkblue;
+}
+
+.tarjeta1 {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 1.5rem;
+}
+.tarjeta1 .tarjeta1-item {
+  text-align: center;
+  padding: 1.5rem;
+}
+.tarjeta1 .imagenes-objetivos1 {
+  max-width: 100%;
+  width: 30%;
+}
+
+.tarjeta2 {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: start;
+  gap: 1.5rem;
+}
+.tarjeta2 .tarjeta2-item {
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: 600px;
+  text-align: center;
+  padding: 1rem;
+}
+.tarjeta2 .imagenes-objetivos2 {
+  max-width: 100%;
+  width: 60%;
+}
+
+.lista-dietas-contenedor {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.lista-dietas-contenedor .lista-dietas {
+  list-style-type: none;
+  font-size: larger;
+  font-weight: bold;
+  text-align: center;
+  color: rgb(12, 12, 79);
+  background-color: whitesmoke;
+  padding: 0.5rem;
+  border: rgb(142, 121, 121) 2px solid;
+  margin: 1rem 0.5rem 1rem 0.5rem;
+  gap: 0.5rem;
+}
+
+.mas-info {
+  text-align: center;
+  font-weight: 500;
+  font-style: italic;
+}
+.mas-info .link-mas-info {
+  color: black;
+  text-decoration: none;
+}
+
+.grid-container {
+  margin: 2rem 0.5rem 3rem 0.5rem;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  grid-template-rows: 1fr;
+  grid-template-areas: "carousel  recetas  recetas";
+}
+.grid-container .grid-area-texto {
+  grid-area: recetas;
+}
+.grid-container .grid-area-carousel {
+  grid-area: carousel;
+}
+.grid-container .imagenes-comida {
+  max-width: 100%;
+  width: 80%;
+}
+
+.link-objetivos-dietas {
+  text-decoration: none;
+  color: black;
+  font-style: italic;
+}
+
+.grid-container-recetas {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1 fr 1fr 1fr 1fr 1fr;
+  grid-template-areas: "panketo-ingredientes  panketo-foto" "crema-de-palta-foto   crema-de-palta-ingredientes" "fideos-ingredientes   fideos-foto";
+  margin-left: 10rem;
+  row-gap: 4rem;
+  -moz-column-gap: 5rem;
+       column-gap: 5rem;
+}
+.grid-container-recetas .grid-panketo-ingredientes {
+  grid-area: panketo-ingredientes;
+}
+.grid-container-recetas .grid-panketo-ingredientes .grid-panketo-foto {
+  grid-area: panketo-foto;
+}
+.grid-container-recetas .grid-cremadepalta-ingredientes {
+  grid-area: crema-de-palta-ingredientes;
+}
+.grid-container-recetas .grid-cremadepalta-ingredientes .grid-cremadepalta-foto {
+  grid-area: crema-de-palta-foto;
+}
+.grid-container-recetas .grid-fideos-ingredientes {
+  grid-area: fideos-ingredientes;
+}
+.grid-container-recetas .grid-fideos-ingredientes .grid-fideos-foto {
+  grid-area: fideos-foto;
+}
+.grid-container-recetas .imagen-comida-recetas {
+  max-width: 100%;
+  width: 55%;
+}
+
+.contactoFormu {
+  margin: 0;
+  padding: 0;
+  font-family: "Nunito", sans-serif;
+  background-color: #f0f0f0;
+}
+
+.intro-section {
+  text-align: center;
+  background-color: #45864b;
+  color: #fff;
+  padding: 70px 0;
+}
+.intro-section .intro-section img {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 20px;
+  margin-top: 0;
+}
+.intro-section .intro-section h1 {
+  font-size: 2rem;
+}
+
+.content-container {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 40px;
+}
+
+.text-section {
+  flex: 1;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+.text-section h2 {
+  font-size: 1.5rem;
+}
+
+.text-section p {
+  margin-bottom: 20px;
+}
+
+.text-section img {
+  max-width: 100%;
+  height: auto;
+}
+
+.form-section {
+  flex: 1;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+.form-section h2 {
+  font-size: 1.5rem;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  margin-bottom: 5px;
+}
+
+input[type=text],
+input[type=email],
+textarea {
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+button {
+  background-color: #463f13;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+.footer-section {
+  text-align: center;
+  background-color: #45864b;
+  color: #fff;
+  padding: 10px 0;
+}
+.footer-section img {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 20px;
+}
+.footer-section p {
+  font-size: 1rem;
+  margin-top:  20px;
+}
+.footer-section .facebook .instagram {
+  font-size: 2rem;
+}/*# sourceMappingURL=estilos.css.map */

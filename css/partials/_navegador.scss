@@ -1,0 +1,36 @@
+.navegador {
+    background-color: rgb(197,221,49);
+    max-width: 100%;
+    margin: 0px;
+    padding: 0px;
+}
+
+.caja-navegador {
+    padding: 18px;
+    
+}
+
+.texto-navegador {
+    font-weight: 300;
+    color: rgb(223,233,232);
+    font-size: 1.3rem;
+    transition: 0.5s;
+}
+
+a:link.link-navegador {
+    text-decoration: none;
+    padding: 20px;
+    color: black;
+}
+
+a:visited {
+    color: black;
+}
+
+a:hover {
+ font-size: 1.5rem;
+}
+
+a:active {
+    color: darkblue;
+}

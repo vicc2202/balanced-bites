@@ -1,0 +1,41 @@
+
+.grid-container-recetas {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1 fr 1fr 1fr 1fr 1fr;
+    grid-template-areas: 
+    "panketo-ingredientes  panketo-foto"
+    "crema-de-palta-foto   crema-de-palta-ingredientes"
+    "fideos-ingredientes   fideos-foto";
+    margin-left: 10rem;
+    row-gap: 4rem;
+    column-gap: 5rem;
+    .grid-panketo-ingredientes {
+        grid-area: panketo-ingredientes;
+        .grid-panketo-foto {
+            grid-area: panketo-foto;
+    
+        }
+    }
+    
+    .grid-cremadepalta-ingredientes {
+        grid-area: crema-de-palta-ingredientes;
+        .grid-cremadepalta-foto {
+            grid-area: crema-de-palta-foto;
+        }    
+    }
+    
+    .grid-fideos-ingredientes {
+        grid-area: fideos-ingredientes;
+        .grid-fideos-foto {
+            grid-area: fideos-foto;
+        }
+    }
+    
+    .imagen-comida-recetas {
+        max-width: 100%;
+        width: 55%;
+    }
+}
+
+
